@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUMIER - Tienda de moda exclusiva. Descubre las últimas tendencias en ropa premium.">
+    <meta name="keywords" content="moda, ropa, tienda online, lujo, premium">
+    <title>LUMIER — Moda Exclusiva</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar navbar-expand-lg navbar-lumier" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LUM<span>IER</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/products.html">Colección</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="pages/login.html"><i class="bi bi-person"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link cart-icon btn-cart-open" style="background:none;border:none;">
+                            <i class="bi bi-bag"></i>
+                            <span class="cart-badge" id="cartBadge">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero-badge">Nueva Colección 2026</div>
+                        <h1>
+                            Donde el Estilo<br>
+                            <span>Encuentra su Esencia</span>
+                        </h1>
+                        <p>
+                            Descubre una curaduría exclusiva de prendas premium diseñadas para quienes
+                            entienden que la moda es más que vestirse: es una declaración.
+                        </p>
+                        <div class="hero-actions d-flex flex-wrap gap-3">
+                            <a href="pages/products.html" class="btn btn-gold btn-gold-pulse">
+                                Explorar Colección
+                            </a>
+                            <a href="#categories" class="btn btn-outline-gold">
+                                Ver Categorías
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── BENEFITS BAR ─── -->
+    <section class="benefits-bar">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="benefit-item">
+                        <i class="bi bi-truck"></i>
+                        <h6>Envío Gratis</h6>
+                        <span>En pedidos sobre $100</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="benefit-item">
+                        <i class="bi bi-shield-check"></i>
+                        <h6>Pago Seguro</h6>
+                        <span>Transacciones protegidas</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="benefit-item">
+                        <i class="bi bi-arrow-return-left"></i>
+                        <h6>Devoluciones</h6>
+                        <span>30 días de garantía</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="benefit-item">
+                        <i class="bi bi-headset"></i>
+                        <h6>Soporte 24/7</h6>
+                        <span>Atención personalizada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CATEGORIES ─── -->
+    <section class="section-lumier" id="categories">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag">Categorías</span>
+                <h2 class="section-title">Explora por Categoría</h2>
+                <p class="section-subtitle mx-auto">
+                    Encuentra exactamente lo que buscas en nuestra colección cuidadosamente seleccionada.
+                </p>
+            </div>
+            <div class="row g-4" id="categoriesContainer">
+                <!-- Cargado dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FEATURED PRODUCTS ─── -->
+    <section class="section-lumier bg-light" id="featured">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-5">
+                <div>
+                    <span class="section-tag">Destacados</span>
+                    <h2 class="section-title mb-0">Productos Destacados</h2>
+                </div>
+                <a href="pages/products.html" class="btn btn-ghost text-dark mt-3 mt-md-0">
+                    Ver Todos <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="row g-4" id="featuredProducts">
+                <!-- Cargado dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── NEWSLETTER ─── -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <span class="section-tag">Newsletter</span>
+                    <h3>Sé el Primero en Saberlo</h3>
+                    <p class="mb-4">
+                        Recibe acceso anticipado a nuevas colecciones, ofertas exclusivas y contenido inspirador.
+                    </p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                        <span class="input-group-text">Suscribirse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer-lumier" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-3">LUM<span>IER</span></div>
+                    <p>
+                        LUMIER es más que una tienda de ropa. Es una experiencia de moda premium donde
+                        cada prenda cuenta una historia de estilo, calidad y distinción.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1">
+                    <h5>Tienda</h5>
+                    <a href="pages/products.html">Colección</a><br>
+                    <a href="#">Nuevo</a><br>
+                    <a href="#">Más Vendido</a><br>
+                    <a href="#">Ofertas</a><br>
+                    <a href="#">Outlet</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Ayuda</h5>
+                    <a href="#">Contacto</a><br>
+                    <a href="#">Envíos</a><br>
+                    <a href="#">Devoluciones</a><br>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Talles</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Av. Principal 1234</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i>hola@lumier.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone me-2"></i>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 LUMIER. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="me-3">Privacidad</a>
+                    <a href="#" class="me-3">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h5>Carrito</h5>
+            <button class="btn-cart-close" id="cartClose"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="cart-drawer-body" id="cartDrawerBody">
+            <div class="text-center py-5 text-muted">
+                <i class="bi bi-bag" style="font-size:3rem;"></i>
+                <p class="mt-2">Tu carrito está vacío</p>
+            </div>
+        </div>
+        <div class="cart-drawer-footer d-none" id="cartDrawerFooter">
+            <div class="cart-drawer-summary">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Subtotal</span>
+                    <strong id="drawerSubtotal">$0.00</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-1">
+                    <span>IGV (18%)</span>
+                    <strong id="drawerIgv">$0.00</strong>
+                </div>
+                <hr class="my-2">
+                <div class="d-flex justify-content-between">
+                    <span>Total</span>
+                    <strong id="drawerTotal">$0.00</strong>
+                </div>
+            </div>
+            <a href="pages/cart.html" class="btn btn-gold w-100 mt-3">Ir al Carrito</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cart-store.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
